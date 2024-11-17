@@ -36,5 +36,6 @@ public class MyDetectorTest {
         BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder()
                 .bugType("MY_BUG").build();
         assertThat(bugCollection, containsExactly(1, bugTypeMatcher));
+        System.out.println("Result: " + bugCollection);
     }
 }

@@ -4,6 +4,8 @@
         pluginid="edu.nyu.websocket-spotbugs">
 
         <Detector class="edu.nyu.MyDetector" reports="MY_BUG" />
+        <Detector class="edu.nyu.websocket.WebSocketDetector" reports="WEBSOCKET_BUG" />
 
         <BugPattern abbrev="MY" type="MY_BUG" category="CORRECTNESS" />
+        <BugPattern abbrev="WS" type="WEBSOCKET_BUG" category="CORRECTNESS" />
 </FindbugsPlugin>
